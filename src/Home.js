@@ -27,14 +27,10 @@ function Home() {
             </span>
           </Col>
           <Col sm={6} className="home_container_col2">
-<<<<<<< HEAD
             <img
               fluid
               src="https://www.infomazeelite.com/wp-content/uploads/2020/01/MERN-stack-development-services-1.png"
             />
-=======
-            <img fluid src="https://d1mwexcsjeyerr.cloudfront.net/images/meanstack/side-img-2.png" />
->>>>>>> 5a3c9c0da8d9268c93596632b3397e4350f312b6
           </Col>
         </Row>
       </Container>
