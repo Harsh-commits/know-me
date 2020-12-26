@@ -10,3 +10,13 @@
   /* box-shadow: 0px 0px 10px 10px rgba(118, 85, 225, 0.3); */
   filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
+
+@media only screen and (max-width: 400px) {
+  .projectall_container {
+    width: 100% !important;
+    margin: 5% 0;
+  }
+  .project_card {
+    margin: 10% 0;
+  }
+}

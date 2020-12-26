@@ -12,7 +12,12 @@ function Portfolio() {
         activeKey={key}
         onSelect={(k) => setKey(k)}
       >
-        <Tab className="portfolio_tab" eventKey="home" title="Home">
+        <Tab
+          className="portfolio_tab"
+          eventKey="home"
+          title="Home"
+          style={{ fontWeight: 800 }}
+        >
           <Projectall />
         </Tab>
         <Tab className="portfolio_tab" eventKey="profile" title="Profile">

@@ -10,3 +10,12 @@
 .portfolio_tab {
   margin-top: 50px;
 }
+
+@media only screen and (max-width: 450px) {
+  .portfolio {
+    width: 100%;
+    padding: 5% 0;
+
+    margin-top: 20%;
+  }
+}

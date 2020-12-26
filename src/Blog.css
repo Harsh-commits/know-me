@@ -3,3 +3,9 @@
   margin-top: 10%;
   font-family: "Jura", sans-serif;
 }
+
+@media only screen and (max-width: 450px) {
+  .blog {
+    margin-top: 20%;
+  }
+}

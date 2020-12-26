@@ -5,15 +5,8 @@
 }
 
 .contact_container_left_col {
-  /* background: url(https://www.jeffkram.com/wp-content/uploads/2019/02/contact-me-png-6.png); */
   object-fit: contain !important;
   padding-right: 20px !important;
-}
-.contact_container_left_col_img {
-  animation: transform 0.5s linear;
-}
-.contact_container_left_col_img:hover {
-  transform: scale(1.2);
 }
 
 .contact_container_right_col {
@@ -25,6 +18,7 @@
 .contact_container_right_col h1 {
   margin: 5% 22%;
   font-weight: 800;
+  font-size: 3vw;
 }
 .contact_container_right_col Button {
   width: 50%;
@@ -35,4 +29,17 @@
 
 .form_label {
   font-weight: 800;
+}
+
+@media only screen and (max-width: 450px) {
+  .contact {
+    margin-top: 25%;
+  }
+  .contact_container_left_col_img {
+    width: 100%;
+    height: auto;
+  }
+  .contact_container_right_col h1 {
+    font-size: 7vw;
+  }
 }

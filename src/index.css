@@ -9,7 +9,7 @@ body {
 }
 html {
   --scrollbarBG: #111;
-  --thumbBG: blueviolet;
+  --thumbBG: #8f4;
 }
 body::-webkit-scrollbar {
   width: 11px;
