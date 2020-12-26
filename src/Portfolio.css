@@ -1,0 +1,12 @@
+.portfolio {
+  width: 80%;
+  padding: 5% 10% 5% 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  font-family: "Jura", sans-serif;
+}
+
+.portfolio_tab {
+  margin-top: 50px;
+}

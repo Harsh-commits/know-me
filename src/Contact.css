@@ -1,0 +1,38 @@
+.contact {
+  margin-top: 10%;
+  padding: 10px;
+  font-family: "Jura", sans-serif;
+}
+
+.contact_container_left_col {
+  /* background: url(https://www.jeffkram.com/wp-content/uploads/2019/02/contact-me-png-6.png); */
+  object-fit: contain !important;
+  padding-right: 20px !important;
+}
+.contact_container_left_col_img {
+  animation: transform 0.5s linear;
+}
+.contact_container_left_col_img:hover {
+  transform: scale(1.2);
+}
+
+.contact_container_right_col {
+  background-color: rgb(255, 140, 46);
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.contact_container_right_col h1 {
+  margin: 5% 22%;
+  font-weight: 800;
+}
+.contact_container_right_col Button {
+  width: 50%;
+  /* position: relative; */
+  /* left: 25%; */
+  margin: 5% 24%;
+}
+
+.form_label {
+  font-weight: 800;
+}
