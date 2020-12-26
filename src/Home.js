@@ -16,7 +16,7 @@ function Home() {
             <span></span>
           </Col>
           <Col sm={6} className="home_container_col2">
-            <img fluid src="webDev.png" />
+            <img fluid src="https://d1mwexcsjeyerr.cloudfront.net/images/meanstack/side-img-2.png" />
           </Col>
         </Row>
       </Container>
