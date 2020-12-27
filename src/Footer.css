@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  text-align: center;
+  background: #000;
+  color: gray;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+}
+
+.footer_container_row1 {
+  padding: 0px 20px 50px 20px;
+}
+.footer_container_row2_col1 {
+  padding-right: 10% !important;
+}
+.footer_container_row2_col2 {
+  padding-left: 10% !important;
+}
+
+@media only screen and (max-width: 450px) {
+  .footer {
+    text-align: center;
+    font-size: 3vw;
+    padding: 0;
+    width: 100%;
+  }
+  .footer_container_row2_col2 {
+    padding-left: 0 !important;
+  }
+}

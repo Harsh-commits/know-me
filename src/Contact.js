@@ -1,12 +1,19 @@
 import React from "react";
 import "./Contact.css";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+import EmailIcon from "@material-ui/icons/Email";
+import CallIcon from "@material-ui/icons/Call";
 
 function Contact() {
   return (
     <div className="contact">
       <Container className="contact_container">
-        <Row>
+        <h3
+          style={{ textAlign: "center", marginBottom: "5%", fontWeight: "700" }}
+        >
+          For any query and communication feel free to contact me.
+        </h3>
+        <Row className="contact_row1">
           <Col className="contact_container_left_col" sm={12} md={6} lg={6}>
             <img
               className="contact_container_left_col_img"
@@ -36,6 +43,24 @@ function Contact() {
               </Form.Group>
               <Button className="btn">Submit</Button>
             </Form>
+          </Col>
+        </Row>
+        <Row className="contact_row2">
+          <Col className="contact_row2_col1" sm={12} lg={6}>
+            <EmailIcon
+              className="contact_icon"
+              style={{ color: "6f4", fontSize: "72px" }}
+            />
+            <h3>E-mail me at</h3>
+            <p>harshtiwari.dtg2015@gmail.com</p>
+          </Col>
+          <Col className="contact_row2_col2" sm={12} lg={6}>
+            <CallIcon
+              className="contact_icon"
+              style={{ color: "6f4", fontSize: "72px" }}
+            />
+            <h3>Call me at</h3>
+            <p>+91-7992317773</p>
           </Col>
         </Row>
       </Container>

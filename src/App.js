@@ -6,6 +6,7 @@ import About from "./About";
 import Portfolio from "./Portfolio";
 import Blog from "./Blog";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,23 +19,28 @@ function App() {
           <Route exact path="/portfolio">
             <Header />
             <Portfolio />
+            <Footer />
           </Route>
           <Route exact path="/about">
             <Header />
             <About />
+            <Footer />
           </Route>
           <Route exact path="/blog">
             <Header />
             <Blog />
+            <Footer />
           </Route>
           <Route exact path="/contact">
             <Header />
             <Contact />
+            <Footer />
           </Route>
           <Route exact path="/">
             <Header />
             <Home />
             <About />
+            <Footer />
           </Route>
         </Switch>
       </Router>

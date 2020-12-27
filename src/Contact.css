@@ -30,6 +30,46 @@
 .form_label {
   font-weight: 800;
 }
+.contact_row2_col1 {
+  padding: 10%;
+  font-weight: 800;
+  text-align: center;
+}
+.contact_row2_col2 {
+  padding: 10%;
+  text-align: center;
+}
+.contact_row2_col1 h3 {
+  font-weight: 800;
+}
+.contact_row2_col1 h3::after {
+  content: " ";
+  height: 4px;
+  width: 4vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  margin-right: auto;
+  margin-left: auto;
+  background: #8f4;
+}
+.contact_row2_col2 h3 {
+  font-weight: 800;
+}
+.contact_row2_col2 p {
+  font-weight: 800;
+}
+.contact_row2_col2 h3::after {
+  content: " ";
+  height: 4px;
+  width: 4vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  margin-right: auto;
+  margin-left: auto;
+  background: #8f4;
+}
 
 @media only screen and (max-width: 450px) {
   .contact {
