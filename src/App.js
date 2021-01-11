@@ -7,6 +7,7 @@ import Portfolio from "./Portfolio";
 import Blog from "./Blog";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Skills from "./Skills";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -27,9 +28,9 @@ function App() {
             <Footer />
           </Route>
           <Route exact path="/blog">
-            <Header />
-            <Blog />
-            <Footer />
+            {/* <Header /> */}
+            <Skills />
+            {/* <Footer /> */}
           </Route>
           <Route exact path="/contact">
             <Header />

@@ -1,0 +1,86 @@
+.skills {
+  padding: 0;
+  /* background: url(htt); */
+  background: url(https://www.owllabs.com/hs-fs/hubfs/Chappellet_Vineyard_Sunset_in_Fall_42eaa7cf-a1f1-4f6b-a260-b6890a6762db-jpg.jpeg?width=903&name=Chappellet_Vineyard_Sunset_in_Fall_42eaa7cf-a1f1-4f6b-a260-b6890a6762db-jpg.jpeg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.skills_left {
+  /* background-color: aqua; */
+  background-color: rgba(2, 5, 10, 0.8);
+  z-index: 2;
+  color: white;
+}
+
+.skills_left_sidenav {
+  position: fixed;
+  height: 100%;
+  width: 25%;
+  position: relative;
+  overflow-y: auto;
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  /* z-index: 1; Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 2%;
+  padding-left: 20px;
+  object-fit: cover;
+  overflow-y: auto;
+}
+.skills_left_sidenav::-webkit-scrollbar {
+  display: none;
+}
+.skills_left_sidenav h1 {
+  font-size: 2vw;
+}
+.skills_right {
+  /* background-color: burlywood; */
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.5;
+  background: rgba(20, 0, 0, 0.8);
+}
+.skills_right_sidenav {
+  margin: 40px;
+}
+
+@media only screen and (max-width: 900px) {
+  .skills_left {
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    position: relative;
+    width: auto;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .skills_left:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -50px;
+    content: " ";
+    display: block;
+    width: auto;
+    height: 850px;
+  }
+  .skills_left .skills_left_sidenav {
+    overflow: initial;
+    height: auto;
+    padding: 0 40px;
+  }
+  .skills_left_sidenav {
+    display: flex;
+    flex-direction: row;
+  }
+  .skills_left_sidenav ul {
+    display: flex;
+  }
+}

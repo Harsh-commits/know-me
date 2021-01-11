@@ -1,13 +1,24 @@
 .home {
   width: 100%;
-  background-color: #000;
+  background-color: #02031a;
   color: aliceblue;
   font-family: "Jura", sans-serif;
   z-index: -1;
+  padding-bottom: 0 !important;
   /* -webkit-mask-image: linear-gradient(180deg, #000, transparent); */
 }
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: auto;
+  height: auto;
+}
 .home_container {
-  padding: 150px 40px 40px 40px !important;
+  padding: 150px 40px 0px 40px !important;
   z-index: 1;
 }
 
@@ -21,7 +32,11 @@
   font-weight: 800;
   font-size: 6vw;
   animation: mymove 5s infinite;
-  z-index: 1;
+  z-index: 999;
+  background: rgba(4, 4, 153, 0.2);
+  /*  rgba(7, 16, 141, 0.2); */
+  padding-left: 5px;
+  border-radius: 10px;
 }
 .home_container_col1 h1:hover {
   text-shadow: -2px 2px white;
@@ -55,12 +70,29 @@
 .home_container_col2 {
   /* align-items: center; */
   justify-content: center;
+  z-index: 999;
 }
 
 .home_container_col2 > img {
   max-width: 100%;
   height: auto;
+  margin-bottom: 30px;
+  /* box-shadow: 0px 0px 5px 4px #000; */
 }
+
+.home_container_col2 > img:hover {
+  animation: spin 1000ms;
+}
+
+@keyframes spin {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
 /* For width 400px and larger: */
 @media only screen and (max-width: 450px) {
   .home_container_col2 > img {

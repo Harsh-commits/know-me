@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { Navbar, Nav } from "react-bootstrap";
 import { Wave, Random } from "react-animated-text";
 import { NavLink, Link } from "react-router-dom";
 
 function Header() {
+  const [header, setHeader] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setHeader(true);
+    } else {
+      setHeader(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
   return (
-    <div className="header">
+    <div className={header ? "header active" : "header"}>
       <Navbar
         collapseOnSelect
         className="header_navbar "
@@ -15,7 +25,7 @@ function Header() {
       >
         <Link to="/">
           <Navbar.Brand className="nav_brand">
-            <Wave text="Harsh Kumar" effect="fadeOut" effectChange={2.0} />
+            <Wave text="Harsh Kumar" effect="fadeOut" effectChange={3.0} />
           </Navbar.Brand>
         </Link>
 

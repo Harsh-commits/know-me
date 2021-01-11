@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Container, Row, Col } from "react-bootstrap";
+import Particles from "react-particles-js";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -34,6 +35,60 @@ function Home() {
           </Col>
         </Row>
       </Container>
+      <Particles
+        className="particles"
+        params={{
+          particles: {
+            number: {
+              value: 160,
+              density: {
+                enable: false,
+              },
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                speed: 4,
+                size_min: 1,
+              },
+            },
+            line_linked: {
+              enable: false,
+            },
+            move: {
+              random: true,
+              speed: 1,
+              direction: "bottom",
+              out_mode: "out",
+            },
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: true,
+                mode: "bubble",
+              },
+              onclick: {
+                enable: true,
+                mode: "repulse",
+              },
+            },
+            modes: {
+              bubble: {
+                distance: 250,
+                duration: 2,
+                size: 0,
+                opacity: 0,
+              },
+              repulse: {
+                distance: 400,
+                duration: 4,
+              },
+            },
+          },
+        }}
+      />
     </div>
   );
 }
